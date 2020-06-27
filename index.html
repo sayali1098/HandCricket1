@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hand Cricket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <audio data-key='lose' src="./sounds/lose.mp3"> </audio>
+  <audio data-key='win' src="./sounds/win.mp3"> </audio>
+  <audio data-key='points' src="./sounds/points.mp3"> </audio>
+  <audio data-key='allout' src="./sounds/wicket.mp3"> </audio>
+  <audio data-key='enter' id="entryy" src="./sounds/clicks.mp3"> </audio>
+
+  <div class="main-class">
+    <!-- LANDING PAGE -->
+    <div class="entry" id="begin">
+      <img src="./assets/cricket-bat.png" alt="cricket-bat">
+      <h1>Hand-Cricket</h1>
+      <button class="start" onclick="PlayGame()">Lets Play!</button>
+    </div>
+
+    <!-- OVERLAYS -->
+    <div id="wingame" class="overlay-text">
+      <!-- <img src="./assets/trophy.png" alt="Trophy"> -->
+      INDIA WINS!
+      <span class="overlay-small">Play Again</span>
+    </div>
+    <div id="lostgame" class="overlay-text">
+      AUSTRALIA WINS!
+      <span class="overlay-small">Play Again</span>
+    </div>
+    <div id="tiegame" class="overlay-text">
+      ITS A TIE!
+      <span class="overlay-small">Play Again</span>
+    </div>
+
+    <!-- RUNS SCORED -->
+    <div class="boardscore" id="boardS" style="display: none;">
+      <h1>SCORE BOARD:</h1>
+      <div class="container">
+        <p class="india">India: <span id="player1score"> 0 </span></p>
+
+        <p class="australia">Australia: <span id="player2score"> 0 </span></p>
+        <p>Target: <span>50</span> Runs</p>
+        <p>Wickets Remaining: <span id="wickets"> 5 </span></p>
+      </div>
+    </div>
+
+    <!-- CHOICE -->
+    <div class="choices" id="choiceS" style="display: none;">
+      <h1>CHOICE:</h1>
+      <p class="india">India : <span id="sel1"> 0 </span></p>
+      <p class="australia">Australia : <span id="sel2"> 0 </span></p>
+    </div>
+
+    <!-- WICKET -->
+    <div class="game-result" id="res" style="display: none;">
+      <h1 id="result"></h1>
+    </div>
+
+    <!-- Players -->
+    <div class="players" id="participants" style="display: none;">
+      <div class="player1">
+        <img class="P1" src="assets/START.png" alt="PLAYER1-HAND" />
+      </div>
+      <div class="player2">
+        <img class="P2" src="assets/START.png" alt="PLAYER2-HAND" />
+      </div>
+    </div>
+
+    <!-- player buttons -->
+    <div class="buttons" id="choice" style="display: none;">
+      <h1>Select Runs</h1>
+      <button class="click" onclick="MakeRuns(1)">1</button>
+      <button class="click" onclick="MakeRuns(2)">2</button>
+      <button class="click" onclick="MakeRuns(3)">3</button>
+      <button class="click" onclick="MakeRuns(4)">4</button>
+      <button class="click" onclick="MakeRuns(5)">5</button>
+      <button class="click" onclick="MakeRuns(6)">6</button>
+    </div>
+  </div>
+
+</body>
+<!-- <script src="app.js"></script> -->
+<script src="try.js"> </script>
+
+</html>

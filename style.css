@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Rum+Raisin&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+
+/*  font-family: 'Rum Raisin', sans-serif; */
+/* font-family: 'Satisfy', cursive; */
+/* font-family: 'Basic',
+        sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  font-family: "Rum Raisin", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  /* background: #2e2d2b; */
+  background: url(https://previews.123rf.com/images/aurielaki/aurielaki1803/aurielaki180300062/97843284-cricket-stadium-background-hitting-recreation-equipment-vector-design-.jpg);
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 120px;
+}
+
+.entry h1 {
+  font-size: 3em;
+  color: black;
+}
+
+.start {
+  height: 45px;
+  width: 150px;
+  background: #6e6a6c;
+  border: none;
+  margin-top: 20px;
+  border: currentColor;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.5em;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.entry button {
+  padding: 5px;
+}
+
+.start:hover {
+  cursor: pointer;
+  color: white;
+  /* color: #f5e37e; */
+}
+
+.main-class {
+  width: 550px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: limegreen;
+  box-shadow: 20px 20px 20px #040735;
+}
+
+/* span {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+} */
+
+.boardscore {
+  border: solid black;
+  border-radius: 5%;
+  height: 130px;
+  width: 80%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.boardscore h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p {
+  font-size: 1.5em;
+  padding-bottom: 0.1em;
+  margin: 1px;
+}
+
+.choices {
+  border: solid black;
+  border-radius: 5%;
+  height: 130px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.choices h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+.choices p {
+  font-size: 1.5em;
+  line-height: 85px;
+}
+
+.players {
+  height: 230px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player1,
+.player2 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 175px;
+}
+
+.player2 {
+  transform: rotateY(-180deg);
+}
+
+.click {
+  width: 60px;
+  height: 45px;
+  margin: 10px 8px 8px 8px;
+  border: black;
+  font-size: 1.5em;
+  background: #494949;
+  color: #050505;
+  border-radius: 100%;
+}
+
+.click:hover {
+  /* background: #f1d639; */
+  background: rgb(214, 46, 46);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.game-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-result h1 {
+  color: blanchedalmond;
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  z-index: 100;
+  /* color: darkgoldenrod; */
+  color: black;
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.overlay-small {
+  font-family: "Rum Raisin", sans-serif;
+  /* color: darkgoldenrod; */
+  color: black;
+}
+
+.overlay-small:hover {
+  cursor: pointer;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: expand forwards;
+}
+
+@keyframes expand {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(https://previews.123rf.com/images/vectomart/vectomart1502/vectomart150200015/36402070-illustration-of-stadium-of-cricket-with-bat-ball-and-trophy.jpg);
+    /* background-image: url(https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg); */
+  }
+}
+
+.india {
+  color: blue;
+}
+
+.australia {
+  color: rgb(255, 255, 0);
+}
+
+/* .wingame {
+  background-image: url(https://previews.123rf.com/images/vectomart/vectomart1502/vectomart150200015/36402070-illustration-of-stadium-of-cricket-with-bat-ball-and-trophy.jpg);
+} */
