@@ -50,7 +50,7 @@ function MakeRuns(p1) {
             WicketsAllowed--;
             const allout = document.querySelector('audio[data-key="allout"]');
             allout.play();
-            document.getElementById("result").innerHTML = "WICKET";
+            document.getElementById("result").innerHTML = "WICKET!";
             if (WicketsAllowed == 0) {
                 const allout = document.querySelector('audio[data-key="allout"]');
                 allout.play();
